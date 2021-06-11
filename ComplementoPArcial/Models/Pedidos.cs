@@ -7,11 +7,11 @@ namespace ComplementoPArcial.Models
 {
     public class Pedidos
     {
-        public int Idpedido { set; get; }
-        public DateTime Fechapedido { set; get; }
-        public int Idcliente { set; get; }
-        public int Idempleado { set; get; }
-        public string Direccionentrega { set; get; }
+        public int IdPedido { set; get; }
+        public DateTime FechaPedido { set; get; }
+        public int IdCliente { set; get; }
+        public int IdEmpleado { set; get; }
+        public string DireccionEntrega { set; get; }
         public int Estado { set; get; }
     }
 }

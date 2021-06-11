@@ -1,7 +1,14 @@
-﻿
+﻿@using ComplementoPArcial.Models
+@model List<ViewModel>
 @{
     ViewBag.Title = "Index";
 }
 
 <h2>Index</h2>
+
+@foreach (var item in Model)
+{
+    @item.nombres
+    @item.titulo
+}
 
