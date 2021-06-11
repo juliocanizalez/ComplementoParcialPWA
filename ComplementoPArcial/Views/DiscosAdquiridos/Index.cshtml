@@ -3,12 +3,38 @@
 @{
     ViewBag.Title = "Index";
 }
+<link href="~/Content/Site.css" rel="stylesheet" />
+<section>
+    <h2 class="text-white text-center my-3">Lista de discos Comprados</h2>
 
-<h2>Index</h2>
+    <div class="table-responsive">
+        <table class="table">
+            <thead class="bg-dark text-white text-center">
+                <tr>
+                    <th>
+                        Nombre
+                    </th>
+                    <th>
+                        Titulo
+                    </th>
+                </tr>
+            </thead>
 
-@foreach (var item in Model)
-{
-    @item.nombres
-    @item.titulo
-}
 
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="text-center text-white">
+                        @item.nombres
+
+                    </td>
+                    <td class="text-center text-white">
+                        @item.titulo
+
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</section>
