@@ -94,9 +94,9 @@ ALTER TABLE canciones ADD CONSTRAINT fk_canciones_disco FOREIGN KEY (iddisco) RE
 INSERT INTO categoria VALUES ('Rock Alternativo');
 INSERT INTO artista VALUES ('Paramore', '', '2004-06-12','Franklin, Tenesse ', 'paramore@ejemplo.com' );
 
-INSERT INTO discos VALUES (1, 1, 'Riot', '2007-06-12', 'Formato', 2, 20, 'Un álbum muy bueno', 'Imagen');
-INSERT INTO discos VALUES (1, 1, 'After Laughter', '2017-05-12', 'Formato', 2, 20, 'álbum para llorar bailando', 'Imagen');
-INSERT INTO discos VALUES (1, 1, 'Brand New Eyes', '2009-09-29', 'Formato', 2, 20, 'El mejor álbum', 'Imagen');
+INSERT INTO discos VALUES (1, 1, 'Riot', '2007-06-12', 'Formato', 2, 20, 'Un Ã¡lbum muy bueno', 'Imagen');
+INSERT INTO discos VALUES (1, 1, 'After Laughter', '2017-05-12', 'Formato', 2, 20, 'Ã¡lbum para llorar bailando', 'Imagen');
+INSERT INTO discos VALUES (1, 1, 'Brand New Eyes', '2009-09-29', 'Formato', 2, 20, 'El mejor Ã¡lbum', 'Imagen');
 
 --disco 1
 INSERT INTO canciones VALUES (1, 1, '3:35', 'When it Rains');
@@ -133,4 +133,3 @@ GO
 
 EXEC procedimiento_titulo 2
 
-drop procedure procedimiento_titulo
